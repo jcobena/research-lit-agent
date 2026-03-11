@@ -164,11 +164,11 @@ Always ground your answer in the retrieved literature."""
                     print(block.text)
                     print("\n" + "="*60)
                     # Save to file
-                    filename = question[:50].strip().replace(" ", "_").replace("/", "-") + ".txt"
-                    with open(filename, "w") as f:
-                        f.write(f"Question: {question}\n\n")
-                        f.write(block.text)
-                    print(f"\n[Saved to {filename}]")
+                    # filename = question[:50].strip().replace(" ", "_").replace("/", "-") + ".txt"
+                    # with open(filename, "w") as f:
+                    #     f.write(f"Question: {question}\n\n")
+                    #     f.write(block.text)
+                    # print(f"\n[Saved to {filename}]")
             break
 
         elif response.stop_reason == "tool_use":
